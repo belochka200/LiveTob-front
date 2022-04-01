@@ -1,0 +1,75 @@
+@import "grid.scss";
+@import "variables.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $white;
+    &::-webkit-scrollbar {
+        width: 10px;
+        background-color: $white;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: $border-radius;
+        background-color: $primary;
+    }
+    @media screen and (max-width: 990px) {
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    body {
+        background: $black;
+        color: $white;
+        &::-webkit-scrollbar {
+            width: 10px;
+            background-color: lighten($black, 15%);
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: $border-radius;
+            background-color: $primary;
+        }
+        @media screen and (max-width: 990px) {
+            &::-webkit-scrollbar {
+                width: 0;
+            }
+        }
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-font;
+}
+
+p, span {
+    font-size: 16px;
+    font-family: $font;
+}
+
+.h-100 {
+   height: 100%!important; 
+}
+
+.w-100 {
+    width: 100%!important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.content {
+    margin-top: calc(#{$margin}*4);
+}
+
+*::selection {
+    background-color: $primary;
+    color: $white;
+}

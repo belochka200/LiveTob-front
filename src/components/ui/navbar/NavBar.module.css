@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+nav {
+  height: 55px;
+  background: #8453ff;
+}
+
+nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+nav .nav .link {
+  padding: 16px;
+  font-size: 16px;
+  color: #f8f7fd;
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav .nav .link:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+/*# sourceMappingURL=NavBar.module.css.map */

@@ -1,0 +1,23 @@
+@import "../../../styles/variables.scss";
+
+nav {
+    height: 55px;
+    background: $primary;
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        .link {
+            padding: 16px;
+            font-size: 16px;
+            color: $white;
+            text-decoration: none;
+            transition: $transition;
+            font-family: $font;
+            &:hover {
+                transform: translateY($translateY);
+            }
+        }
+    }
+}
