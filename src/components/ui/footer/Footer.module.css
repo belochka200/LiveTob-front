@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+.footer {
+  height: auto;
+  padding: calc(8px*4) 0;
+  margin-top: calc(8px*8);
+  background: #090020;
+}
+/*# sourceMappingURL=Footer.module.css.map */

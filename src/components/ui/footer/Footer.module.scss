@@ -1,0 +1,8 @@
+@import '../../../styles/Variables.scss';
+
+.footer {
+    height: auto;
+    padding: calc(#{$margin}*4) 0;
+    margin-top: calc(#{$margin}*8);
+    background: darken($primary, 60%);
+}

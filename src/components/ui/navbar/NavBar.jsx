@@ -9,8 +9,10 @@ function NavBar() {
     <nav>
       <div className="container h-100">
         <div className={classes.nav}>
-          <Link to='/main' className={classes.link}>Главная</Link>
-          <Link to='/sights' className={classes.link}>Достопримечательности</Link>
+          <Link to='/' className={classes.link}>Главная</Link>
+          <Link to='/events' className={classes.link}>Мероприятия</Link>
+
+          {/* <Link to='/sights' className={classes.link}>Достопримечательности</Link> */}
           <Link to='/wheretogo' className={classes.link}>Куда сходить</Link>
           <Link to='/login' className={classes.link}>Аккаунт</Link>
         </div>

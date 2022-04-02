@@ -1,7 +1,8 @@
 @import "../../../styles/variables.scss";
 
 nav {
-    height: 55px;
+    min-height: 55px;
+    height: auto;
     background: $primary;
     .nav {
         display: flex;

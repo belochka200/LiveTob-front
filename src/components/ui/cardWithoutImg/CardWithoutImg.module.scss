@@ -1,0 +1,16 @@
+@import '../../../styles/variables.scss';
+
+.card {
+    max-width: 350px;
+    background: #fff;
+    height: auto;
+    border-radius: $border-radius;
+    padding: 4px;
+    position: relative;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    .card {
+        background: lighten($black, 5%);
+    }
+}

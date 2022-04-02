@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,sEAAI;AACZ,OAAO,CAAC,gFAAI;ADCZ,AAAA,KAAK,CAAC;EACF,SAAS,EAAE,KAAK;EAChB,UAAU,EAAE,IAAI;EAChB,MAAM,EAAE,IAAI;EACZ,aAAa,ECED,GAAG;EDDf,OAAO,EAAE,GAAG;EACZ,QAAQ,EAAE,QAAQ;CACrB;;AAED,MAAM,MAAM,MAAM,MAAM,oBAAoB,EAAE,IAAI;EAC9C,AAAA,KAAK,CAAC;IACF,UAAU,EAAE,OAAmB;GAClC",
+    "sources": [
+        "CardWithoutImg.module.scss",
+        "../../../styles/variables.scss"
+    ],
+    "names": [],
+    "file": "CardWithoutImg.module.css"
+}

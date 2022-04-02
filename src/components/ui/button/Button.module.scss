@@ -1,0 +1,39 @@
+@import '../../../styles/Variables.scss';
+
+@mixin button($bg, $color) {
+    padding: 8px 16px;
+    background: $primary;
+    color: $color;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+    border: 2px solid transparent;
+    text-decoration: none;
+    text-align: center;
+    &:hover {
+        transform: translateY(-4px);
+    }
+}
+
+%button {
+    @include button($primary, $white);
+}
+
+.default {
+    @extend %button;
+}
+
+.outline {
+    @extend %button;
+    background: transparent;
+    border: 2px solid $primary;
+    color: $primary;
+    fill: $primary;
+    &:hover {
+        background: transparent;
+    }
+}

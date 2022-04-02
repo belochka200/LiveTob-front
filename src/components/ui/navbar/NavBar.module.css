@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 nav {
-  height: 55px;
+  min-height: 55px;
+  height: auto;
   background: #8453ff;
 }
 

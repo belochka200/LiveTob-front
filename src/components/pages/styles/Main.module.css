@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 .welcome_img {
   width: 100%;
-  height: 100%;
-  position: absolute;
+  height: calc(100vh - 55px);
   background-image: url("../../../images/welcomepage.webp");
   -o-object-fit: cover;
      object-fit: cover;

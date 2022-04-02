@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+.card {
+  max-width: 350px;
+  background: #fff;
+  height: auto;
+  border-radius: 8px;
+  padding: 4px;
+  position: relative;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  .card {
+    background: #1f1f1f;
+  }
+}
+/*# sourceMappingURL=CardWithoutImg.module.css.map */

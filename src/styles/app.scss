@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background: $white;
     &::-webkit-scrollbar {
@@ -23,6 +27,16 @@ body {
         }
     }
 }
+
+// .wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     height: 100%;
+// }
+
+// footer {
+//     flex: 0 0 auto
+// }
 
 @media only screen and (prefers-color-scheme: dark) {
     body {
@@ -67,6 +81,51 @@ p, span {
 
 .content {
     margin-top: calc(#{$margin}*4);
+    min-height: calc(100vh - 55px);
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.my-5 {
+    margin: calc(#{$margin} * 5) 0;
+}
+.my-4 {
+    margin: calc(#{$margin} * 4) 0;
+}
+.my-3 {
+    margin: calc(#{$margin} * 3) 0;
+}
+.my-2 {
+    margin: calc(#{$margin} * 2) 0;
+}
+.my-1 {
+    margin: calc(#{$margin} * 1) 0;
+}
+
+.mx-5 {
+    margin: 0 calc(#{$margin} * 5);
+}
+.mx-4 {
+    margin: 0 calc(#{$margin} * 4);
+}
+.mx-3 {
+    margin: 0 calc(#{$margin} * 3);
+}
+.mx-2 {
+    margin: 0 calc(#{$margin} * 2);
+}
+.mx-1 {
+    margin: 0 calc(#{$margin} * 1);
 }
 
 *::selection {
