@@ -3,6 +3,7 @@ import classes from './Card.module.css'
 import '../../../styles/grid.css'
 
 function Card(props) {
+  const styles = 'col-4 col-sm-6 my-1 d-flex justify-content-center align-items-center'
   if (props.post.bored) {
     function setMonth(x) {
       switch (x) {
@@ -42,9 +43,9 @@ function Card(props) {
       let t2 = die.split('-')
       t2[1] = setMonth(t2[1])
       return (
-        <div className="col-4 col-sm-12 my-5 d-flex justify-content-center align-items-center">
+        <div className={styles}>
           <div className={classes.card}>
-            <img src={props.post.image}/>
+            <img src={`http://localhost:8000${props.post.image}`} className={classes.img}/>
             <div className={classes.cardinfo}>
               <h3>{props.post.title}</h3>
               <p>{parseInt(t[2], 10)} {t[1]} {t[0]} г. - {parseInt(t2[2], 10)} {t2[1]} {t2[0]} г.</p>
@@ -54,7 +55,7 @@ function Card(props) {
       ) 
     } else {
       return (
-        <div className="col-4 col-sm-12 my-5 d-flex justify-content-center align-items-center">
+        <div className={styles}>
           <div className={classes.card}>
             <img src={`http://localhost:8000${props.post.image}`} className={classes.img}/>
             <div className={classes.cardinfo}>
@@ -67,8 +68,9 @@ function Card(props) {
     }
   } else {
     return (
-      <div className="col-4 col-sm-12 my-5 d-flex justify-content-center align-items-center">
+      <div className={styles}>
         <div className={classes.card}>
+          <img src={`http://localhost:8000${props.post.image}`} className={classes.img}/>
           <div className={classes.cardinfo}>
             <h3 className={classes.title}>{props.post.title}</h3>
           </div>

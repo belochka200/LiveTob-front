@@ -5,12 +5,18 @@
     background: #fff;
     height: auto;
     border-radius: $border-radius;
-    padding: 4px;
+    padding: 16px;
     position: relative;
+    border: $border;
+    margin: $margin;
+    p {
+        font-size: 16px!important;
+    }
 }
 
 @media only screen and (prefers-color-scheme: dark) {
     .card {
-        background: lighten($black, 5%);
+        background: $black-light;
+        border: $border-dark;
     }
 }

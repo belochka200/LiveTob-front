@@ -4,6 +4,7 @@ nav {
   min-height: 55px;
   height: auto;
   background: #8453ff;
+  width: 100%;
 }
 
 nav .nav {
@@ -32,5 +33,11 @@ nav .nav .link {
 nav .nav .link:hover {
   -webkit-transform: translateY(-4px);
           transform: translateY(-4px);
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
 }
 /*# sourceMappingURL=NavBar.module.css.map */

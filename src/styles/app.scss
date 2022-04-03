@@ -28,23 +28,13 @@ body {
     }
 }
 
-// .wrapper {
-//     display: flex;
-//     flex-direction: column;
-//     height: 100%;
-// }
-
-// footer {
-//     flex: 0 0 auto
-// }
-
 @media only screen and (prefers-color-scheme: dark) {
     body {
         background: $black;
         color: $white;
         &::-webkit-scrollbar {
             width: 10px;
-            background-color: lighten($black, 15%);
+            background-color: $black-light;
         }
         &::-webkit-scrollbar-thumb {
             border-radius: $border-radius;
@@ -62,9 +52,46 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $title-font;
 }
 
+h1 {
+    font-size: calc(#{$font-size} * 2);
+}
+h2 {
+    font-size: calc(#{$font-size} * 1.5);
+}
+h3 {
+    font-size: calc(#{$font-size} * 1);
+}
+h4 {
+    font-size: calc(#{$font-size} * .8);
+}
+h5 {
+    font-size: calc(#{$font-size} * .5);
+}
+h6 {
+    font-size: calc(#{$font-size} * .3);
+}
+
 p, span {
-    font-size: 16px;
+    font-size: $font-size;
     font-family: $font;
+}
+
+@media only screen and (max-width: 768px) {
+    $font-size: 14px;
+    h1 {
+        font-size: calc(#{$font-size} * 2);
+    }
+    h2 {
+        font-size: calc(#{$font-size} * 1.5);
+    }
+    p, span {
+        font-size: $font-size;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $primary;
 }
 
 .h-100 {

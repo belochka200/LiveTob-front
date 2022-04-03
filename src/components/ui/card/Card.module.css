@@ -7,7 +7,7 @@
   max-width: 300px;
   height: 300px;
   border-radius: 8px;
-  padding: 4px;
+  border: 2px solid #eee;
   position: relative;
 }
 
@@ -17,13 +17,16 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
+  -o-object-position: top center;
+     object-position: top center;
 }
 
 .card .cardinfo {
+  color: #f8f7fd;
   position: absolute;
-  bottom: 4px;
+  bottom: 0;
   text-align: left;
-  width: calc(100% - 8px);
+  width: 100%;
   -webkit-backdrop-filter: blur(16px);
           backdrop-filter: blur(16px);
   background: rgba(18, 18, 18, 0.5);
@@ -34,6 +37,13 @@
 @media only screen and (prefers-color-scheme: dark) {
   .card {
     background: #1f1f1f;
+    border: 2px solid #2f2f2f;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .card {
+    height: 200px;
   }
 }
 /*# sourceMappingURL=Card.module.css.map */

@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+.block {
+  width: 100%;
+  height: 300px;
+  background: white;
+  margin: calc(8px / 2);
+  text-transform: uppercase;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.block:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.block .subtitle {
+  font-size: 16px;
+  font-weight: normal;
+  opacity: .75;
+  text-transform: lowercase;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  .block {
+    background: #1f1f1f;
+    border: 2px solid #2f2f2f;
+  }
+}
+/*# sourceMappingURL=WhereToGo.module.css.map */

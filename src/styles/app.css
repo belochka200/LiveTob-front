@@ -326,7 +326,7 @@ body::-webkit-scrollbar-thumb {
   }
   body::-webkit-scrollbar {
     width: 10px;
-    background-color: #383838;
+    background-color: #1f1f1f;
   }
   body::-webkit-scrollbar-thumb {
     border-radius: 8px;
@@ -344,9 +344,50 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
 
+h1 {
+  font-size: calc(16px * 2);
+}
+
+h2 {
+  font-size: calc(16px * 1.5);
+}
+
+h3 {
+  font-size: calc(16px * 1);
+}
+
+h4 {
+  font-size: calc(16px * .8);
+}
+
+h5 {
+  font-size: calc(16px * .5);
+}
+
+h6 {
+  font-size: calc(16px * .3);
+}
+
 p, span {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: calc(14px * 2);
+  }
+  h2 {
+    font-size: calc(14px * 1.5);
+  }
+  p, span {
+    font-size: 14px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #8453ff;
 }
 
 .h-100 {

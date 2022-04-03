@@ -2,14 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 $black: #121212;
+$black-light: lighten($black, 5%);
 $white: #f8f7fd;
-// $primary: rgb(164, 33, 197);
 $primary: #8453ff;
 $margin: 8px;
+$border: 2px solid #eee;
+$border-dark: 2px solid darken(#eee, 75%);
+
 $border-radius: 8px;
 
 $title-font: "Montserrat", sans-serif;
 $font: "Open Sans", sans-serif;
+$font-size: 16px;
 
 $transition: all .15s ease-in-out;
 $translateY: -4px;

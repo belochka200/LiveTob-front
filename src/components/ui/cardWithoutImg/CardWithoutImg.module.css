@@ -5,13 +5,20 @@
   background: #fff;
   height: auto;
   border-radius: 8px;
-  padding: 4px;
+  padding: 16px;
   position: relative;
+  border: 2px solid #eee;
+  margin: 8px;
+}
+
+.card p {
+  font-size: 16px !important;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
   .card {
     background: #1f1f1f;
+    border: 2px solid #2f2f2f;
   }
 }
 /*# sourceMappingURL=CardWithoutImg.module.css.map */
