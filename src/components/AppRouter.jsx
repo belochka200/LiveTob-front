@@ -13,7 +13,8 @@ function AppRouter() {
     <Routes>
       <Route path='/' element={<Main />} />
       <Route path='/wheretogo' element={<WhereToGo />} />
-      <Route path='/sights' element={<Sights />} />
+      <Route path='/wheretogo/sights' element={<Sights />} />
+      <Route path='/wheretogo/sights/:sight_category' element={<Sights />} />
       <Route path='/events' element={<Events />} />
       <Route path='/login' element={<Login />} />
       <Route path='/reg' element={<Register />} />

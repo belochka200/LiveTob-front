@@ -1,14 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 .card {
-  max-width: 350px;
+  width: 100%;
   background: #fff;
-  height: auto;
+  height: 100%;
   border-radius: 8px;
   padding: 16px;
-  position: relative;
   border: 2px solid #eee;
   margin: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card p {

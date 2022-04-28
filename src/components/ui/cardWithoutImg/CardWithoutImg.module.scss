@@ -1,14 +1,17 @@
 @import '../../../styles/variables.scss';
 
 .card {
-    max-width: 350px;
+    width: 100%;
     background: #fff;
-    height: auto;
+    height: 100%;
     border-radius: $border-radius;
     padding: 16px;
-    position: relative;
+    // position: relative;
     border: $border;
     margin: $margin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     p {
         font-size: 16px!important;
     }
@@ -19,4 +22,8 @@
         background: $black-light;
         border: $border-dark;
     }
+}
+
+@media only screen and (max-width: 768px) {
+
 }

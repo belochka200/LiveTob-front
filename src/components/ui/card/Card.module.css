@@ -9,6 +9,10 @@
   border-radius: 8px;
   border: 2px solid #eee;
   position: relative;
+  margin: 8px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
 }
 
 .card .img {
@@ -34,16 +38,76 @@
   border-radius: 0 0 8px 8px;
 }
 
+.card .gps {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(248, 247, 253, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: calc(8px / 2);
+  border-radius: 8px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.card .gps:hover {
+  background: rgba(132, 83, 255, 0.25);
+}
+
+.card .category {
+  padding: calc(8px / 2);
+  color: #121212;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f8f7fd;
+  margin: 8px;
+  border-radius: 8px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: lowercase;
+  font-size: 16px;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
 @media only screen and (prefers-color-scheme: dark) {
   .card {
     background: #1f1f1f;
     border: 2px solid #2f2f2f;
   }
+  .card .gps {
+    background: rgba(18, 18, 18, 0.75);
+  }
+  .card .category {
+    background: #121212;
+    color: #f8f7fd;
+  }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 992px) {
   .card {
     height: 200px;
+  }
+  .card .category {
+    font-size: calc(16px - 2px);
+    margin: calc(8px - 4px);
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .card {
+    height: 150px;
   }
 }
 /*# sourceMappingURL=Card.module.css.map */

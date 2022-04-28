@@ -9,6 +9,9 @@
     border-radius: $border-radius;
     border: $border;
     position: relative;
+    margin: $margin;
+    transition: $transition;
+    cursor: pointer;
     .img {
         width: 100%;
         height: 100%;
@@ -25,8 +28,38 @@
         backdrop-filter: blur(16px);
         background: rgba($black, .5);
         padding: 4px;
-        // background: linear-gradient(to bottom, transparent, black);
         border-radius: 0 0 $border-radius $border-radius;
+    }
+    .gps {
+        position: absolute;
+        top: $margin;
+        right: $margin;
+        background: rgba($white, .75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: calc(#{$margin} / 2);
+        border-radius: $border-radius;
+        transition: $transition;
+        &:hover {
+            background: rgba($primary, .25);
+        }
+    }
+    .category {
+        padding: calc(#{$margin} / 2);
+        color: $black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $white;
+        margin: $margin;
+        border-radius: $border-radius;
+        font-family: $font;
+        text-transform: lowercase;
+        font-size: $font-size;
+    }
+    &:hover {
+        transform: translateY($translateY);
     }
 }
 
@@ -34,11 +67,28 @@
     .card {
         background: $black-light;
         border: $border-dark;
+        .gps {
+            background: rgba($black, .75);
+        }
+        .category {
+            background: $black;
+            color: $white;
+        }
     }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 992px) {
     .card {
         height: 200px;
+        .category {
+            font-size: calc(#{$font-size} - 2px);
+            margin: calc(#{$margin} - 4px);
+        }
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .card {
+        height: 150px;
     }
 }

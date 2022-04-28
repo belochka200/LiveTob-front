@@ -10,14 +10,10 @@ function Register() {
     <div>
       <div className="container content">
         <h1 className="text-center">Регистрация</h1>
-        <div className="row">
-          <form className="col-6">
-            <Input label="Имя" placeholder="Имя Фамилия" type="text"/>
-            <Input label="Почта" placeholder="example@gmail.com" type="email"/>
-            <Input label="Пароль" placeholder="••••••" type="password"/>
-            <Button>Зарегистрироваться</Button>
-          </form>
-        </div>
+        <Input label="Имя" placeholder="Имя Фамилия" type="text"/>
+        <Input label="Почта" placeholder="example@gmail.com" type="email"/>
+        <Input label="Пароль" placeholder="••••••" type="password"/>
+        <Button>Зарегистрироваться</Button>
         <div className="d-flex align-items-center my-5">
           <h3>Уже есть аккаунт? <Link to="/login">Войти</Link></h3>
         </div>
